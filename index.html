@@ -9,7 +9,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    emailjs.init(process.env.EMAILJS_PUBLIC_KEY);
+    emailjs.init('GrZMUeaIZoRQRfNC2');
   </script>
 </head>
 <body>
@@ -632,7 +632,7 @@
     btn.textContent = 'Mengirim...';
     btn.disabled = true;
 
-    emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_EMAIL_ID, {
+    emailjs.send('service_kt3bgip', 'template_bxv3lel', {
       nama:       document.getElementById('nama').value,
       perusahaan: document.getElementById('perusahaan').value,
       email:      document.getElementById('email').value,
